@@ -1,0 +1,24 @@
+.bloco .tituloBloco:hover {
+    cursor: pointer;
+}
+
+.bloco .informacoesBloco {
+    position: relative;
+    animation: aparecer normal .5s;
+    z-index: -5;
+}
+.bloco.-fechado .informacoesBloco {
+    display: none;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        top: -40px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}

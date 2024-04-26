@@ -1,0 +1,96 @@
+.dia > p {
+    padding: 10px;
+    width: 50%;
+    margin: 40px auto 0 auto;
+    border: solid 1px black;
+    background-color: #AC1019;
+    color: white;
+}
+.dia > p:hover, .dia > p:focus {
+    background-color: #d42c35;
+}
+
+.dia .jogo {
+    border: solid 1px black;
+    display: grid;
+    grid: 1fr  3fr / 2fr 1fr 2fr;
+    padding: 10px 10px 5px 10px;
+    margin: 0 10px;
+    background-color: #273a41;
+    color:white
+}
+.jogo:not(1) {
+    border-top: 0;
+}
+
+.modalidade {
+    font-weight: 600;
+    grid-column: 1 / 4;
+}
+
+.lado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pontuacao span {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contra {
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+}
+
+.jogo.-acabado {
+    background-color: #314a52;
+    padding-bottom: 30px;
+}
+
+.jogo.-acontecendo {
+    background-color: #567681;
+}
+
+.jogo.-acontecendo .modalidade span {
+    color: white;
+    font-weight: bold;
+}
+
+
+.lado.-ganhou .pontuacao {
+    color: #8bcfe6;
+}
+.lado.-ganhou .pontuacao span {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.lado.-perdeu .pontuacao {
+    color: #e06e74;
+}
+
+.lado.-empate .pontuacao {
+    color: #dfdfdf;
+}
+
+.lado.-ganhou .time {
+    background-color: #c1eefd;
+    color: #39555E;
+    font-weight: bold;
+}
+
+.lado.-perdeu .time {
+    background-color: #ffbcbf;
+    color: #AC1019;
+    font-weight: bold;
+}
+
+.lado.-empate .time {
+    background-color: #d8d8d8;
+    color: #222222;
+    font-weight: bold;
+}
